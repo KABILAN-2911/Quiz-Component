@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>web design</title>
+    <style>
+          .div1{
+    background-color:rgb(229, 222, 213);
+    display:inline-block;
+    padding:20px;
+    margin-left: 500px;
+}
+span {
+    background-color: brown;
+    padding: 10px;
+    margin-left: -10px;
+    color: white;
+}
+button{
+    background-color: white;
+    border: 1px solid white;
+    margin: 5px;
+    padding: 10px;
+    padding-right: 100px;
+    border-radius: 5px;
+}
+    </style>
+    
+</head>
+<body>
+    <div class="div1">
+        <h2>In web design,what does CSS stand for?</h2>
+        <button onclick="wrong1()" id="btn1" style="padding-right: 118px;"><span>A</span>  Corrier Static Source</button><br>
+        <button onclick="wrong2()" id="btn2" style="padding-right: 125px;" ><span>B</span>  Corrier style sourse</button><br>
+        <button onclick="wrong3()" id="btn3" style="padding-right: 97px;"><span>C</span>  Consecutive Style Sheet</button><br>
+        <button onclick="right()"  id="btn4" style="padding-right: 107px;" ><span>D</span>  Cascading Style Sheet</button>
+    </div>
+
+    <script>
+        function wrong1(){
+    document.getElementById("btn1").style.background="red";
+}
+function wrong2(){
+    document.getElementById("btn2").style.background="red";
+}
+function wrong3(){
+    document.getElementById("btn3").style.background="red";
+}
+function right(){
+    document.getElementById("btn4").style.background="green";
+}
+    </script>
+       
+</body>
+</html>
